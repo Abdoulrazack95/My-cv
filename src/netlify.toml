@@ -1,0 +1,4 @@
+[build]
+base = "my-cv/"
+publish = "my-cv/npm run build/"
+command = "npm run build"
