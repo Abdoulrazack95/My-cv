@@ -16,13 +16,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
   </head>
-  <body>
+  <body id="home">
 
     <!-- Start of the Header -->
 
     <header class="container-fluid" id="header-info">
       <div class="profile">
-        <img src="/images/Me.jpg" class="rounded-circle myImage">
+        <img src="/images/Me.jpg" class="rounded-circle myImage" alt="Abdoulrazack picture">
         <h1>Abdoulrazack Ahmed <span class="small">Software developer</span></h1>
         <div class="phone-number">
           <i class="fas fa-phone-volume fa-1x"></i>
@@ -36,15 +36,12 @@
     <!-- Start of the Navbar -->
 
     <navbar class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="navigation">
-        <i class="fas fa-home fa-2x text-light"></i>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a href="#home"><i class="fas fa-home fa-2x text-light"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ulList ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href='#main-slides' >Home</a>
-          </li>
           <li class="nav-item ">
             <a class="nav-link" href='#' >About Me</a>
           </li>
@@ -61,7 +58,7 @@
             <a class="nav-link" href='#skills'>Skills</a> 
             </li>
           <li class="nav-item">
-            <a class="nav-link" href='#'>Contact</a> 
+            <a class="nav-link" href='#contact'>Contact</a> 
           </li>
         </ul>
       </div>
@@ -71,7 +68,7 @@
 
     <!-- Start of the Slides -->
 
-    <div class="bd-example" id="main-slides">
+    <div id="main-slides">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval=5000>
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -82,22 +79,19 @@
           <div class="carousel-item active">
             <img src="/images/first-slide.jpg" class="d-block w-100" alt="coding symbol">
             <div class="carousel-caption d-none d-md-block">
-              <h1 class="animated fadeInLeft ">Front-end Web developer</h1>
-              <p>Capable of working the front-end and back-end</p>
+              <h1 class="animated fadeInLeft">Front-end Web developer</h1>
             </div>
           </div>
           <div class="carousel-item">
             <img src="/images/second-slide.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>Back-end web developer</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="/images/third-slide.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>Full-stack web developer</h1>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
           </div>
         </div>
@@ -115,6 +109,7 @@
     <!-- End of the Slides -->
 
     <!-- Start of the experience section -->
+
 
     <section class="container-fluid bg-light" id="experience">
       <div class="row">

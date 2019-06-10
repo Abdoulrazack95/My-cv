@@ -7,6 +7,17 @@ body{
     overflow-x: hidden;
 }
 
+/* All containers */
+
+.container-fluid{
+    padding: 20px;
+    height: auto;
+    background-color: #084772
+}
+
+
+/* Header Section */
+
 #header-info{
     height: 280px;
     display: flex;
@@ -19,22 +30,41 @@ body{
     width: 200px;
 }
 
+.profile h1{
+    font-size: 20px;
+}
 
+
+/* All headings */
+
+.heading{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading h2{
+    width: 400px;
+    text-transform: uppercase;
+    margin: 20px auto 20px auto;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+/* Navigation section */
 
 #navigation{
     font-weight: 700;
     text-transform: uppercase;
 }
-.profile h1{
-    font-size: 20px;
-}
+
  
 #navbarCollapse li{
     padding-right: .7rem;
 }
 
 #navigation .navbar-nav .nav-link:hover{
-    color: olivedrab;
+    border-bottom: 2px solid #d4d4d4;
+    color: #d4d4d4;
 }
 
 .carousel-caption{
@@ -48,54 +78,6 @@ body{
     font-size: 4rem;
     font-weight: 700;
 }
-
-.carousel-caption p{
-    font-size: 1.5rem;
-}
-
-
-
-.heading{
-    margin: 0 auto;
-    text-align: center;
-    
-}
-
-.heading h2{
-    width: 400px;
-    text-transform: uppercase;
-    margin: 20px auto 20px auto;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-}
-
-#proti{
-    background-color: #e84c47;
-}
-.portfolio {
-    overflow: hidden;
-    background-color: #084772;
-}
-.portfolio img{
-    max-width: 100%;
-    transition: transform .5s ease;
-}
-
-.row.no-padding [class*=col-]{
-    padding: 0;
-}
-
-.portfolio img:hover{
-    transform: scale(1.1);
-    cursor: zoom-in;
-}
-
-
-
-
-
-
-
 
 /* timeline */
 
@@ -321,11 +303,34 @@ body{
     font-size: 2.70vh;
 }
 
-#education{
-    padding: 20px;
-    height: auto;
-    
+/* Portfolio section */
+#projects {
+    margin-bottom: 10%;
 }
+
+.portfolio {
+    overflow: hidden;
+    background-color: #084772;
+}
+.portfolio img{
+    max-width: 100%;
+    transition: transform .5s ease;
+}
+
+.row.no-padding{
+    margin-top: 5%;
+}
+.row.no-padding [class*=col-]{
+    padding: 0;
+}
+
+.portfolio img:hover{
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+
+/* Education Section */
 
 #education .education-info{
     max-width: 90%;
@@ -333,6 +338,8 @@ body{
     box-shadow: 1px 1px 9px 1px darkgray;
     margin-bottom: 30px;
 }
+
+/* Skills Section */
 
 #skills{
     margin-bottom: 30px;
@@ -359,8 +366,6 @@ body{
     font-size: 3em;
     padding: 10px;
 }
-
-
  
 #skills .skills-content .front-end-skill img{
     width: 100%;
