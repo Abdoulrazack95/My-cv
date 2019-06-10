@@ -9,10 +9,9 @@ body{
 
 /* All containers */
 
-.container-fluid{
+#header-info{
     padding: 20px;
     height: auto;
-    background-color: #084772
 }
 
 
@@ -304,6 +303,7 @@ body{
 }
 
 /* Portfolio section */
+
 #projects {
     margin-bottom: 10%;
 }
@@ -332,6 +332,11 @@ body{
 
 /* Education Section */
 
+#education{
+    height: auto;
+    padding-bottom: 50px;
+}
+
 #education .education-info{
     max-width: 90%;
     margin: 0 auto;
@@ -339,10 +344,13 @@ body{
     margin-bottom: 30px;
 }
 
+#education .education-info img{
+    min-height: 100%;
+}
 /* Skills Section */
 
 #skills{
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 
 #skills .heading{
